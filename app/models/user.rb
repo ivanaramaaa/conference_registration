@@ -68,6 +68,11 @@ class User < ActiveRecord::Base
     reset_sent_at < 2.hours.ago
   end
   
+  # Returns true if admin user
+  def admin?
+    admin
+  end
+  
   private
     # Converts email to all lower-case.
     def downcase_email

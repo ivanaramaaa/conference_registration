@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
   get 'password_resets/new'
 
   get 'password_resets/edit'
