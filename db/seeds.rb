@@ -16,8 +16,8 @@ User.create!(name:  "Example User",
 
 User.create!(name:  "Admin User",
              email: "irodr041@fiu.edu",
-             password:              "admin",
-             password_confirmation: "admin",
+             password:              "adminuser",
+             password_confirmation: "adminuser",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
